@@ -7,7 +7,7 @@ const style = {
 };
 
 const PuzzleBoard = ({ pieces, setPieces }) => {
-  const rows = [...Array(5)];  // assuming 5 rows
+  const rows = [...Array(5)];
 
   return (
     <div style={style}>

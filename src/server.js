@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const multer  = require('multer');
 const sharp = require('sharp');
@@ -67,7 +66,7 @@ app.post('/upload', upload.single('image'), async (req, res) => {
       }
     }
 
-    shuffleArray(imagePieces); // перемешивание массива
+    shuffleArray(imagePieces);
 
     res.json(imagePieces.map(piece => `http://localhost:3001${piece}`));
   } catch (err) {

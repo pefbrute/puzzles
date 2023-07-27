@@ -1,4 +1,3 @@
-// ImageUpload.js
 import React from 'react';
 
 function ImageUpload({ onUpload }) {
